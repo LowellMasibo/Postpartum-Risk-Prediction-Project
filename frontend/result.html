@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>About</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">Assessment result</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="record-head">
+                    <a href="caseload.html" class="back-link">
+                        <span class="material-icons-sharp">arrow_back</span> Caseload
+                    </a>
+                    <span class="record-id">P-4519</span>
+                    <span class="text-muted">Assessed 09 Sep 2026, 14:24</span>
+                </div>
+
+                <div class="safety-flag">
+                    <span class="material-icons-sharp">report</span>
+                    <p><strong>Safety flag.</strong> EPDS item 10 scored above zero. Direct risk
+                    assessment indicated regardless of total score.</p>
+                </div>
+
+                <section class="two-col">
+
+                    <div class="panel">
+                        <small class="text-muted">Predicted risk</small>
+                        <div class="risk-value">
+                            <span class="risk-number">38%</span>
+                            <small class="text-muted">95% CI 29–47</small>
+                        </div>
+                        <p class="risk-band band-text-mod">Moderate band · threshold 25%</p>
+
+                        <div class="risk-scale" aria-hidden="true">
+                            <span class="band band-low" style="flex:25"></span>
+                            <span class="band band-mod" style="flex:25"></span>
+                            <span class="band band-empty" style="flex:50"></span>
+                        </div>
+                        <div class="scale-ticks text-muted">
+                            <span>0%</span><span>25%</span><span>50%</span><span>100%</span>
+                        </div>
+
+                        <div class="stat-row">
+                            <small class="text-muted">EPDS total</small>
+                            <p><strong>13</strong> of 30 · cut-off 13</p>
+                        </div>
+                        <div class="stat-row">
+                            <small class="text-muted">Change since 12 Aug</small>
+                            <p>Up from 24%, previously low band</p>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <small class="text-muted">Factor contributions</small>
+                        <p class="section-intro">Change in predicted probability, relative to baseline</p>
+
+                        <div class="factor">
+                            <div class="factor-head"><span>Sleep under 4 h/night</span><span class="effect-up">+11.2</span></div>
+                            <div class="bar"><i class="fill-high" style="width:78%"></i></div>
+                        </div>
+                        <div class="factor">
+                            <div class="factor-head"><span>History of MDD</span><span class="effect-up">+8.4</span></div>
+                            <div class="bar"><i class="fill-high" style="width:59%"></i></div>
+                        </div>
+                        <div class="factor">
+                            <div class="factor-head"><span>Emergency caesarean</span><span class="effect-up">+4.1</span></div>
+                            <div class="bar"><i class="fill-high" style="width:29%"></i></div>
+                        </div>
+                        <div class="factor">
+                            <div class="factor-head"><span>Partner support present</span><span class="effect-down">−6.3</span></div>
+                            <div class="bar"><i class="fill-low" style="width:44%"></i></div>
+                        </div>
+
+                        <a href="factors.html" class="link">View all 18 factors</a>
+                    </div>
+
+                </section>
+
+                <div class="panel">
+                    <h2>Suggested actions</h2>
+                    <p class="section-intro">Decision support only. Clinical judgement takes precedence.</p>
+                    <ul class="action-list">
+                        <li><span>Conduct direct risk assessment this visit</span><a href="#" class="link">Record</a></li>
+                        <li><span>Refer to perinatal mental health service</span><a href="#" class="link">Refer</a></li>
+                        <li><span>Schedule reassessment in 2 weeks</span><a href="#" class="link">Schedule</a></li>
+                    </ul>
+                </div>
+
+                <div class="provenance">
+                    <span>Model v1.3 · trained 04 Aug 2026</span>
+                    <span>AUC 0.81 (validation)</span>
+                    <span>Assessed by Dr Anand</span>
+                    <a href="model-card.html" class="link">Model card</a>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

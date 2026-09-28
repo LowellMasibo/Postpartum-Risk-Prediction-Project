@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>About</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">Patient record</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="record-head">
+                    <a href="caseload.html" class="back-link">
+                        <span class="material-icons-sharp">arrow_back</span> Caseload
+                    </a>
+                    <span class="record-id">P-4519</span>
+                    <span class="text-muted">31 y · 9 weeks postpartum · G2P2 · Dr Anand</span>
+                    <a href="assessment.html" class="btn btn-primary push-right">New assessment</a>
+                </div>
+
+                <div class="panel">
+                    <h2>Risk over time</h2>
+                    <p class="section-intro">Predicted probability at each assessment</p>
+                    <!-- Hand-coded SVG: no charting library needed for a fixed series. -->
+                    <svg viewBox="0 0 620 160" class="trend" role="img"
+                         aria-label="Risk rising from 18 percent in June to 38 percent in September">
+                        <rect x="42" y="12" width="566" height="36" fill="#8F3F4C" opacity="0.07"/>
+                        <rect x="42" y="48" width="566" height="42" fill="#D9A25F" opacity="0.09"/>
+                        <rect x="42" y="90" width="566" height="36" fill="#6B9080" opacity="0.09"/>
+                        <line x1="42" y1="126" x2="608" y2="126" stroke="#E6D5D3"/>
+                        <text x="34" y="16" class="ax" text-anchor="end">60</text>
+                        <text x="34" y="52" class="ax" text-anchor="end">45</text>
+                        <text x="34" y="94" class="ax" text-anchor="end">25</text>
+                        <text x="34" y="130" class="ax" text-anchor="end">0</text>
+                        <polyline points="112,108 277,102 442,96 578,64" fill="none"
+                                  stroke="#5B7F7D" stroke-width="2"/>
+                        <circle cx="112" cy="108" r="4" fill="#5B7F7D"/>
+                        <circle cx="277" cy="102" r="4" fill="#5B7F7D"/>
+                        <circle cx="442" cy="96" r="4" fill="#5B7F7D"/>
+                        <circle cx="578" cy="64" r="5" fill="#D9A25F" stroke="#fff" stroke-width="2"/>
+                        <text x="112" y="148" class="ax" text-anchor="middle">18 Jun</text>
+                        <text x="277" y="148" class="ax" text-anchor="middle">16 Jul</text>
+                        <text x="442" y="148" class="ax" text-anchor="middle">12 Aug</text>
+                        <text x="578" y="148" class="ax" text-anchor="middle">09 Sep</text>
+                    </svg>
+                </div>
+
+                <div class="panel">
+                    <h2>Assessment history</h2>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr><th>Date</th><th>EPDS</th><th>Risk</th><th>Band</th><th>Top factor</th><th></th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>09 Sep 2026</td><td>13</td><td>38%</td><td><span class="pill pill-mod">Moderate</span></td><td class="text-muted">Sleep under 4 h</td><td><a href="result.html" class="link">View</a></td></tr>
+                                <tr><td>12 Aug 2026</td><td>9</td><td>24%</td><td><span class="pill pill-low">Low</span></td><td class="text-muted">History of MDD</td><td><a href="result.html" class="link">View</a></td></tr>
+                                <tr><td>16 Jul 2026</td><td>8</td><td>21%</td><td><span class="pill pill-low">Low</span></td><td class="text-muted">History of MDD</td><td><a href="result.html" class="link">View</a></td></tr>
+                                <tr><td>18 Jun 2026</td><td>7</td><td>18%</td><td><span class="pill pill-low">Low</span></td><td class="text-muted">Emergency caesarean</td><td><a href="result.html" class="link">View</a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2>Care actions</h2>
+                    <ul class="action-list log">
+                        <li><span>Referred to perinatal mental health service</span><small class="text-muted">09 Sep · Dr Anand</small></li>
+                        <li><span>Reassessment scheduled 23 Sep</span><small class="text-muted">09 Sep · Dr Anand</small></li>
+                        <li><span>Sleep support information provided</span><small class="text-muted">12 Aug · N. Whitfield</small></li>
+                    </ul>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

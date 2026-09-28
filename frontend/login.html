@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <header class="auth-header">
+        <a href="index.html" class="logo">
+            <img src="./images/logo.jpeg" alt="Logo of the page">
+            <h2>PERINAV</h2>
+        </a>
+        <a href="index.html" class="link">
+            <span class="material-icons-sharp back-icon">arrow_back</span> Back to home
+        </a>
+    </header>
+    
+    <main class="auth-main">
+        <div class="auth-card-wrap">
+            <div class="=auth-intro">
+                <h1>Log in</h1>
+                <p>Foe registered clinicians and perinatal services.</p>
+            </div>
+
+            <div class="panel">
+                <form class="form" onsubmit="return false">
+                    <div class="form-group">
+                        <label for="email">Work email</label>
+                        <input type="email" id="email" name="email" placeholder="name@service.health" autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <div class="label-row">
+                            <label for="password">Password</label>
+                            <a href="#" class="link">Forgot?</a>
+                        </div>
+                        <input type="password" id="password" name="password" placeholder="••••••••••" autocomplete="current-password">
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Keep me signed in on this device</label>
+                    </div>
+
+                    <a href="caseload.html" class="btn btn-outline btn-block">
+                        Continue with your organisation account
+                    </a>
+                </form>
+            </div>
+
+            <p class="auth-alt">
+                Don't have an account? <a href="request-access.html" class="link">Request access</a>
+                <small class="text-muted">Accounts are provisioned by your service administrator.</small>
+            </p>
+ 
+            <div class="notice">
+                <span class="material-icons-sharp">lock</span>
+                <p>This system holds confidential patient information. Access is logged and audited.</p>
+            </div>
+ 
+            <p class="auth-alt">
+                Are you a patient?
+                <a href="questionnaire.html" class="link">Check your risk without an account</a>
+            </p>
+
+        </div>
+    </main>
+</body>
+</html>

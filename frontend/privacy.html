@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="index.html">
+                    <span class="material-icons-sharp">home</span>
+                    <h3>Home</h3>
+                </a>
+                <a href="index.html#what-it-does">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>What it does</h3>
+                </a>
+                <a href="index.html#how-it-works">
+                    <span class="material-icons-sharp">timeline</span>
+                    <h3>How it works</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>About</h3>
+                </a>
+                <a href="contact.html">
+                    <span class="material-icons-sharp">perm_phone_msg</span>
+                    <h3>Contact</h3>
+                </a>
+                <a href="login.html">
+                    <span class="material-icons-sharp">login</span>
+                    <h3>Log in</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">Privacy and consent</p>
+
+                <div class="topbar-actions">
+                    <a href="request-access.html" class="btn btn-outline">Request access</a>
+                    <a href="login.html" class="btn btn-primary">Log in</a>
+                </div>
+            </header>
+
+            <main>
+                <section class="page-intro">
+                    <p class="eyebrow">Privacy</p>
+                    <h1>Privacy and consent</h1>
+                    <p class="lead">How this system handles health information, and what patients
+                    are asked to agree to before screening.</p>
+                </section>
+
+                <section>
+                    <h2>Before you start</h2>
+                    <div class="panel">
+                        <p class="section-intro">Shown to every patient before the questionnaire.
+                        Consent is recorded with the assessment.</p>
+                        <div class="checkbox-row consent-row">
+                            <input type="checkbox" id="c1">
+                            <label for="c1">I agree to my answers being shared with my care team</label>
+                        </div>
+                        <div class="checkbox-row consent-row">
+                            <input type="checkbox" id="c2">
+                            <label for="c2">I understand this is a screening tool and not a diagnosis</label>
+                        </div>
+                        <a href="questionnaire.html" class="btn btn-primary">Continue</a>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Privacy notice</h2>
+                    <div class="feature-grid">
+                        <article class="panel">
+                            <h3>What we collect</h3>
+                            <p>Questionnaire responses, clinical details entered by your care team,
+                            and a patient identifier. No names are stored in this system.</p>
+                        </article>
+                        <article class="panel">
+                            <h3>Who can see it</h3>
+                            <p>Only clinicians assigned to your care within your service.
+                            Every access is logged.</p>
+                        </article>
+                        <article class="panel">
+                            <h3>How long we keep it</h3>
+                            <p>Assessment records are retained in line with your service's health
+                            record retention policy.</p>
+                        </article>
+                        <article class="panel">
+                            <h3>Your choices</h3>
+                            <p>You can decline screening at any point, and ask your care team to
+                            correct or remove your records.</p>
+                        </article>
+                    </div>
+
+                    <div class="callout" style="margin-top: 1.2rem">
+                        <span class="material-icons-sharp">edit_note</span>
+                        <p><strong>Placeholder text.</strong> This notice must be reviewed against the
+                        Privacy Act 1988 and your service's own policy before any real patient data
+                        is collected.</p>
+                    </div>
+                </section>
+                <footer class="site-footer">
+                    <p class="disclaimer">
+                        This system provides decision support only and does not diagnose. It has not
+                        been validated in clinical deployment and must not replace clinical judgement
+                        or established escalation procedures.
+                    </p>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </footer>
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

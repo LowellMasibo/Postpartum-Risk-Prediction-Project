@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add patient — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html" class="active">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">Add patient</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <h1>Add patient</h1>
+
+                <section class="two-col">
+                    <div class="panel">
+                        <p class="section-intro">Identifier only. No names are stored in this system.</p>
+                        <form class="form" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="pid">Patient identifier</label>
+                                <input type="text" id="pid" placeholder="P-">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <input type="text" id="age">
+                                </div>
+                                <div class="form-group">
+                                    <label for="weeks">Weeks postpartum</label>
+                                    <input type="text" id="weeks">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="clin">Assigned clinician</label>
+                                <select id="clin">
+                                    <option>Dr Anand</option>
+                                    <option>N. Whitfield</option>
+                                </select>
+                            </div>
+                            <div class="notice">
+                                <span class="material-icons-sharp">task_alt</span>
+                                <p>Confirm the patient has consented to screening before recording
+                                an assessment.</p>
+                            </div>
+                            <a href="assessment.html" class="btn btn-primary btn-block" style="margin-top:1rem">
+                                Add and start assessment
+                            </a>
+                        </form>
+                    </div>
+
+                    <div class="side-col">
+                        <div class="panel empty-state">
+                            <span class="material-icons-sharp">groups</span>
+                            <h3>No patients yet</h3>
+                            <p>Patients appear on the caseload once assessed, sorted by risk band.</p>
+                            <a href="#" class="link">Import from patient record system</a>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

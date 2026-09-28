@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All factors — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>About</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">All factors</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <a href="result.html" class="back-link">
+                    <span class="material-icons-sharp">arrow_back</span> Back to result
+                </a>
+
+                <div class="panel-head">
+                    <h1>All factors — P-4519</h1>
+                    <small class="text-muted">18 features</small>
+                </div>
+
+                <div class="panel">
+                    <p class="section-intro">Contributions sum to the difference between the baseline
+                    rate and this patient's predicted risk. Sorted by absolute effect.</p>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr><th>Factor</th><th>Value</th><th>Effect</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Sleep per night</td><td class="text-muted">Under 4 hours</td><td class="effect-up">+11.2</td></tr>
+                                <tr><td>History of major depression</td><td class="text-muted">Yes</td><td class="effect-up">+8.4</td></tr>
+                                <tr><td>Partner support</td><td class="text-muted">Present</td><td class="effect-down">−6.3</td></tr>
+                                <tr><td>Delivery mode</td><td class="text-muted">Emergency caesarean</td><td class="effect-up">+4.1</td></tr>
+                                <tr><td>Age</td><td class="text-muted">31</td><td class="effect-down">−2.0</td></tr>
+                                <tr><td>Feeding method</td><td class="text-muted">Mixed</td><td class="effect-up">+1.4</td></tr>
+                                <tr><td>Infant NICU admission</td><td class="text-muted">No</td><td class="text-muted">0.0</td></tr>
+                                <tr><td>Parity</td><td class="text-muted">2</td><td class="text-muted">0.0</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

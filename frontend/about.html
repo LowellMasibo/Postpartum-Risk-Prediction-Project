@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+ 
+        
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="login.html">
+                    <span class="material-icons-sharp">account_circle</span>
+                    <h3>Log in</h3>
+                </a>
+                <a href="request-access.html">
+                    <span class="material-icons-sharp">request_page</span>
+                    <h3>Request Access</h3>
+                </a>
+                <a href="caseload.html">
+                    <span class="material-icons-sharp">cases</span>
+                    <h3>Caseload</h3>
+                </a>
+                
+                <a href="about.html">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>About</h3>
+                </a>
+                <a href="contact.html">
+                    <span class="material-icons-sharp">perm_phone_msg</span>
+                    <h3>Contact</h3>
+                </a>
+                <a href="#">
+                    <h3>log out</h3>
+                    <span class="material-icons-sharp">logout</span>                    
+                </a>
+            </div>
+        </aside>
+ 
+        
+        <div class="main-column">
+ 
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+ 
+                <p class="topbar-title">About</p>
+ 
+                <div class="topbar-actions">
+                    <a href="request-access.html" class="btn btn-outline">Request access</a>
+                    <a href="login.html" class="btn btn-primary">Log in</a>
+                </div>
+            </header>
+ 
+            <main>
+ 
+                <section class="page-intro">
+                    <h1>About this project</h1>
+                    <p class="lead">
+                        Postpartum depression affects a significant share of new mothers, and
+                        most cases go undetected. We built a screening tool that estimates risk
+                        from a short questionnaire and, unlike most prediction models, explains
+                        every result in terms a clinician can act on.
+                    </p>
+                </section>
+ 
+                <section>
+                    <h2>How the model works</h2>
+                    <div class="feature-grid">
+ 
+                        <article class="panel">
+                            <span class="material-icons-sharp feature-icon">dataset</span>
+                            <h3>Trained on</h3>
+                            <p>Public perinatal mental health datasets, documented in the model card.</p>
+                        </article>
+ 
+                        <article class="panel">
+                            <span class="material-icons-sharp feature-icon">checklist</span>
+                            <h3>Screening basis</h3>
+                            <p>Validated benchmark instruments, combined with clinical and psychosocial factors.</p>
+                        </article>
+ 
+                        <article class="panel">
+                            <span class="material-icons-sharp feature-icon">visibility</span>
+                            <h3>Explainability</h3>
+                            <p>Per-factor contributions on every result, so no prediction is a black box.</p>
+                        </article>
+ 
+                    </div>
+                </section>
+ 
+                <section>
+                    <h2>Our team</h2>
+                    <p class="section-intro">A capstone team at the University of Canberra.</p>
+ 
+                    <div class="team-grid">
+ 
+                        <article class="panel team-card">
+                            <div class="avatar" aria-hidden="true">R</div>
+                            <h3>Reem</h3>
+                            <p class="role">Frontend and design</p>
+                            <p>Builds the assessment form and the clinician dashboard.</p>
+                        </article>
+ 
+                        <article class="panel team-card">
+                            <div class="avatar" aria-hidden="true">L</div>
+                            <h3>Lowell</h3>
+                            <p class="role">Backend and AI</p>
+                            <p>Develops the prediction model and its explainability layer.</p>
+                        </article>
+ 
+                        <article class="panel team-card">
+                            <div class="avatar" aria-hidden="true">E</div>
+                            <h3>Efaz</h3>
+                            <p class="role">Data and infrastructure</p>
+                            <p>Designs the database and the data collection pipeline.</p>
+                        </article>
+ 
+                    </div>
+                </section>
+ 
+                <section>
+                    <h2>Our sponsor</h2>
+                    <div class="panel sponsor">
+                        <div class="logo-placeholder" aria-hidden="true"></div>
+                        <div>
+                            <h3>Sri Ramakrishna Engineering College</h3>
+                            <p>
+                                Project sponsor, setting the clinical requirements and reviewing the
+                                system throughout development. Delivered as a capstone project at the
+                                University of Canberra.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+ 
+                <section>
+                    <h2>Our goals</h2>
+                    <ul class="goal-list">
+                        <li class="panel">
+                            <span class="material-icons-sharp">flag</span>
+                            <p>Bring risk screening into routine perinatal review without adding to clinic time.</p>
+                        </li>
+                        <li class="panel">
+                            <span class="material-icons-sharp">flag</span>
+                            <p>Explain every prediction, so clinicians are never asked to trust a black box.</p>
+                        </li>
+                        <li class="panel">
+                            <span class="material-icons-sharp">flag</span>
+                            <p>Surface the patients who need attention first, across a whole caseload.</p>
+                        </li>
+                    </ul>
+                </section>
+ 
+                <section>
+                    <h2>Limitations and intended use</h2>
+                    <div class="callout">
+                        <span class="material-icons-sharp">warning_amber</span>
+                        <p>
+                            This tool estimates risk. It does not diagnose postpartum depression, and
+                            a low result does not mean nothing is wrong. It was developed and tested
+                            on public datasets that may not represent every population equally, and it
+                            has not been validated in clinical deployment. It is intended to inform a
+                            clinician's judgement, never to replace it.
+                        </p>
+                    </div>
+                </section>
+ 
+                <footer class="site-footer">
+                    <p class="disclaimer">
+                        This system provides decision support only and does not diagnose. It has not
+                        been validated in clinical deployment and must not replace clinical judgement
+                        or established escalation procedures.
+                    </p>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </footer>
+ 
+            </main>
+        </div>
+ 
+    </div>
+ 
+    <script src="./script.js"></script>
+</body>
+</html>

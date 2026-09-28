@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>About</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">New assessment</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="record-head">
+                    <a href="caseload.html" class="back-link">
+                        <span class="material-icons-sharp">arrow_back</span> Caseload
+                    </a>
+                    <span class="record-id">P-4519</span>
+                    <span class="text-muted">31 y · 9 weeks postpartum · G2P2</span>
+                    <span class="save-state text-muted">
+                        <span class="material-icons-sharp">cloud_done</span> Draft saved 14:22
+                    </span>
+                </div>
+
+                <div class="stepper" aria-label="Assessment progress">
+                    <div class="stepper-step done"><span class="stepper-bar"></span><small>About the patient</small></div>
+                    <div class="stepper-step current"><span class="stepper-bar"></span><small>Obstetric history</small></div>
+                    <div class="stepper-step"><span class="stepper-bar"></span><small>Psychiatric history</small></div>
+                    <div class="stepper-step"><span class="stepper-bar"></span><small>EPDS items</small></div>
+                    <div class="stepper-step"><span class="stepper-bar"></span><small>Result</small></div>
+                </div>
+
+                <!-- Each .step-panel is one step. script.js shows one at a time. -->
+                <form class="form" onsubmit="return false;">
+
+                    <div class="panel step-panel" data-step="1" hidden>
+                        <h2>About the patient</h2>
+                        <p class="section-intro">Pre-populated from record where available. Verify before submitting.</p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="text" id="age" value="31">
+                            </div>
+                            <div class="form-group">
+                                <label for="weeks">Weeks postpartum</label>
+                                <input type="text" id="weeks" value="9">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel step-panel" data-step="2">
+                        <h2>Obstetric history</h2>
+                        <p class="section-intro">Pre-populated from record where available. Verify before submitting.</p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="grav">Gravidity / parity</label>
+                                <input type="text" id="grav" value="G2 P2">
+                            </div>
+                            <div class="form-group">
+                                <label for="mode">Delivery mode</label>
+                                <select id="mode">
+                                    <option>Emergency caesarean</option>
+                                    <option>Elective caesarean</option>
+                                    <option>Vaginal, unassisted</option>
+                                    <option>Vaginal, assisted</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="comp">Pregnancy complications</label>
+                                <input type="text" id="comp" value="Pre-eclampsia">
+                            </div>
+                            <div class="form-group">
+                                <label for="feed">Feeding method</label>
+                                <select id="feed">
+                                    <option>Mixed</option>
+                                    <option>Breast</option>
+                                    <option>Formula</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel step-panel" data-step="3" hidden>
+                        <h2>Psychiatric history</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mdd">History of major depression</label>
+                                <select id="mdd"><option>Yes</option><option>No</option></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="prev">Previous postpartum depression</label>
+                                <select id="prev"><option>No</option><option>Yes</option></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel step-panel" data-step="4" hidden>
+                        <h2>EPDS items</h2>
+                        <p class="section-intro">Patient self-report, scored 0 to 3. Running total 13.</p>
+                        <div class="table-scroll">
+                            <table class="epds">
+                                <thead><tr><th>Item</th><th>Score</th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1. Able to laugh and see the funny side</td>
+                                        <td class="score-cell">
+                                            <span class="score">0</span><span class="score on">1</span><span class="score">2</span><span class="score">3</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Looked forward with enjoyment</td>
+                                        <td class="score-cell">
+                                            <span class="score">0</span><span class="score">1</span><span class="score on">2</span><span class="score">3</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Blamed myself unnecessarily</td>
+                                        <td class="score-cell">
+                                            <span class="score">0</span><span class="score">1</span><span class="score">2</span><span class="score on">3</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="row-flagged">
+                                        <td>10. Thoughts of harming myself
+                                            <span class="tag tag-high">Requires review</span></td>
+                                        <td class="score-cell">
+                                            <span class="score">0</span><span class="score on-high">1</span><span class="score">2</span><span class="score">3</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="panel step-panel" data-step="5" hidden>
+                        <h2>Ready to calculate</h2>
+                        <p>All required fields are complete. The result will be saved against this
+                        patient's record.</p>
+                        <a href="result.html" class="btn btn-primary">Calculate risk</a>
+                    </div>
+
+                    <div class="step-nav">
+                        <button type="button" class="btn btn-outline" data-prev>
+                            <span class="material-icons-sharp">arrow_back</span> Back
+                        </button>
+                        <span class="step-count text-muted"></span>
+                        <button type="button" class="btn btn-primary" data-next>Continue</button>
+                    </div>
+
+                </form>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

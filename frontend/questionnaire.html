@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire — PERINAV</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body class="auth-page">
+
+    <header class="auth-header">
+        <a href="index.html" class="logo">
+            <img src="./images/logo.jpeg" alt="">
+            <h2>PERINAV</h2>
+        </a>
+    </header>
+
+    <main class="auth-main">
+        <div class="tablet-card">
+
+            <div class="q-progress">
+                <div class="q-progress-head">
+                    <small class="text-muted">Question <span data-q-current>3</span> of 10</small>
+                    <small class="text-muted">About 2 minutes left</small>
+                </div>
+                <div class="q-bar"><i data-q-fill style="width:30%"></i></div>
+            </div>
+
+            <div class="q-body">
+                <small class="text-muted">In the past 7 days</small>
+
+                <div class="q-step" data-q="1" hidden>
+                    <h1>I have been able to laugh and see the funny side of things</h1>
+                    <div class="q-options">
+                        <button type="button" class="q-option">As much as I always could</button>
+                        <button type="button" class="q-option">Not quite so much now</button>
+                        <button type="button" class="q-option">Definitely not so much now</button>
+                        <button type="button" class="q-option">Not at all</button>
+                    </div>
+                </div>
+
+                <div class="q-step" data-q="2" hidden>
+                    <h1>I have looked forward with enjoyment to things</h1>
+                    <div class="q-options">
+                        <button type="button" class="q-option">As much as I ever did</button>
+                        <button type="button" class="q-option">Rather less than I used to</button>
+                        <button type="button" class="q-option">Definitely less than I used to</button>
+                        <button type="button" class="q-option">Hardly at all</button>
+                    </div>
+                </div>
+
+                <div class="q-step" data-q="3">
+                    <h1>I have blamed myself unnecessarily when things went wrong</h1>
+                    <div class="q-options">
+                        <button type="button" class="q-option">No, never</button>
+                        <button type="button" class="q-option">Not very often</button>
+                        <button type="button" class="q-option selected">Yes, some of the time</button>
+                        <button type="button" class="q-option">Yes, most of the time</button>
+                    </div>
+                </div>
+
+                <div class="q-nav">
+                    <button type="button" class="btn btn-outline" data-q-prev>Back</button>
+                    <button type="button" class="btn btn-primary btn-lg" data-q-next>Next</button>
+                </div>
+            </div>
+
+            <div class="q-foot">
+                There are no right or wrong answers. Your responses go to your care team
+                and are discussed with you today.
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+</html>

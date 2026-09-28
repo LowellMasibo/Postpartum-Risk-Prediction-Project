@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needs review — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html" class="active">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">Needs review</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="panel-head">
+                    <h1>Needs review</h1>
+                    <small class="text-muted">7 patients</small>
+                </div>
+
+                <div class="callout callout-tight">
+                    <span class="material-icons-sharp">info</span>
+                    <p>Patients appear here when a safety item scores above zero, a band moves
+                    upward, or a scheduled reassessment is overdue.</p>
+                </div>
+
+                <div class="panel">
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Patient</th><th>Reason</th><th>Band</th><th>Flagged</th><th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row-flagged">
+                                    <td>P-4519</td>
+                                    <td>Safety item scored above zero</td>
+                                    <td><span class="pill pill-mod">Moderate</span></td>
+                                    <td class="text-muted">09 Sep</td>
+                                    <td><a href="result.html" class="link">Open</a></td>
+                                </tr>
+                                <tr>
+                                    <td>P-4471</td>
+                                    <td>Moved from moderate to high</td>
+                                    <td><span class="pill pill-high">High</span></td>
+                                    <td class="text-muted">08 Sep</td>
+                                    <td><a href="result.html" class="link">Open</a></td>
+                                </tr>
+                                <tr>
+                                    <td>P-4390</td>
+                                    <td>Reassessment overdue by 11 days</td>
+                                    <td><span class="pill pill-high">High</span></td>
+                                    <td class="text-muted">29 Aug</td>
+                                    <td><a href="patient.html" class="link">Open</a></td>
+                                </tr>
+                                <tr>
+                                    <td>P-4433</td>
+                                    <td>Assessment left incomplete</td>
+                                    <td class="text-muted">Not scored</td>
+                                    <td class="text-muted">04 Sep</td>
+                                    <td><a href="assessment.html" class="link">Resume</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

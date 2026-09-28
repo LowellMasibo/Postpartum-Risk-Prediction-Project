@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model card — PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-icons-sharp">info</span>
+                    <h3>About</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">Model card</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="panel-head">
+                    <h1>Model card</h1>
+                    <small class="text-muted">v1.3 · trained 04 Aug 2026</small>
+                </div>
+
+                <div class="insights">
+                    <div class="tile">
+                        <span class="material-icons-sharp">query_stats</span>
+                        <h3>AUC</h3>
+                        <h1>0.81</h1>
+                        <small class="text-muted">Held-out validation set</small>
+                    </div>
+                    <div class="tile">
+                        <span class="material-icons-sharp">visibility</span>
+                        <h3>Sensitivity</h3>
+                        <h1>0.76</h1>
+                        <small class="text-muted">At the 25% operating point</small>
+                    </div>
+                    <div class="tile">
+                        <span class="material-icons-sharp">filter_alt</span>
+                        <h3>Specificity</h3>
+                        <h1>0.72</h1>
+                        <small class="text-muted">At the 25% operating point</small>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2>Intended use</h2>
+                    <p>Supports clinician judgement during routine perinatal review. Not a diagnostic
+                    instrument, and not intended for use without a clinician present.</p>
+                </div>
+
+                <div class="panel">
+                    <h2>Training data</h2>
+                    <p>Public perinatal mental health datasets. Demographic composition, collection
+                    period and known gaps to be documented here before release.</p>
+                </div>
+
+                <div class="callout">
+                    <span class="material-icons-sharp">warning_amber</span>
+                    <div>
+                        <h3>Known limitations</h3>
+                        <p>Performance has not been measured separately across demographic subgroups.
+                        The model has not been validated in clinical deployment. Predictions on patients
+                        unlike the training population should be treated with additional caution.</p>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

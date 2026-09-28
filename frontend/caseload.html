@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caseload - PERINAV</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./style.css">
+    <!--MATERIAL ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="">
+                    <h2>PERINAV</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="caseload.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Caseload</h3>
+                </a>
+                <a href="review.html">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Needs review</h3>
+                    <span class="badge">7</span>
+                </a>
+                <a href="add-patient.html">
+                    <span class="material-icons-sharp">person_add</span>
+                    <h3>Add patient</h3>
+                </a>
+                
+                <a href="index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+
+      
+        <div class="main-column">
+
+            <header class="topbar">
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <p class="topbar-title">Caseload</p>
+
+                <div class="topbar-actions">
+                    <a href="add-patient.html" class="btn btn-primary">Add patient</a>
+                    <div class="user">
+                        <div class="avatar" aria-hidden="true">A</div>
+                        <div class="user-info">
+                            <h3>Dr Anand</h3>
+                            <small class="text-muted">Maternal health</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+
+                <div class="insights">
+
+                    <div class="tile">
+                        <span class="material-icons-sharp">analytics</span>
+                        <h3>Screened</h3>
+                        <h1>148</h1>
+                        <small class="text-muted">This month</small>
+                    </div>
+
+                    <div class="tile high">
+                        <span class="material-icons-sharp">priority_high</span>
+                        <h3>High band</h3>
+                        <h1>12</h1>
+                        <small class="text-muted">8% of caseload</small>
+                    </div>
+
+                    <div class="tile moderate">
+                        <span class="material-icons-sharp">flag</span>
+                        <h3>Needs review</h3>
+                        <h1>7</h1>
+                        <small class="text-muted">3 overdue</small>
+                    </div>
+
+                </div>
+
+                <div class="panel">
+                    <h2>Distribution across bands</h2>
+                    <div class="band-bar" aria-hidden="true">
+                        <span class="band band-low"  style="flex: 92"></span>
+                        <span class="band band-mod"  style="flex: 44"></span>
+                        <span class="band band-high" style="flex: 12"></span>
+                    </div>
+                    <ul class="band-legend">
+                        <li><span class="swatch swatch-low" aria-hidden="true"></span>Low — 92</li>
+                        <li><span class="swatch swatch-mod" aria-hidden="true"></span>Moderate — 44</li>
+                        <li><span class="swatch swatch-high" aria-hidden="true"></span>High — 12</li>
+                    </ul>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-head">
+                        <h2>Patients</h2>
+                        <small class="text-muted">Sorted by risk band</small>
+                    </div>
+
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Patient</th>
+                                    <th>Band</th>
+                                    <th>Risk</th>
+                                    <th>Top factor</th>
+                                    <th>Last assessed</th>
+                                    <th><span class="sr-only">Actions</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>P-4471</td>
+                                    <td><span class="pill pill-high">High</span></td>
+                                    <td>61%</td>
+                                    <td class="text-muted">Sleep deprivation</td>
+                                    <td class="text-muted">08 Sep</td>
+                                    <td><a href="patient.html" class="link">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>P-4402</td>
+                                    <td><span class="pill pill-high">High</span></td>
+                                    <td>54%</td>
+                                    <td class="text-muted">Prior depression</td>
+                                    <td class="text-muted">05 Sep</td>
+                                    <td><a href="patient.html" class="link">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>P-4519</td>
+                                    <td><span class="pill pill-mod">Moderate</span></td>
+                                    <td>38%</td>
+                                    <td class="text-muted">Sleep under 4 h</td>
+                                    <td class="text-muted">09 Sep</td>
+                                    <td><a href="patient.html" class="link">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>P-4488</td>
+                                    <td><span class="pill pill-low">Low</span></td>
+                                    <td>12%</td>
+                                    <td class="text-muted">None significant</td>
+                                    <td class="text-muted">02 Sep</td>
+                                    <td><a href="patient.html" class="link">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a href="#" class="link show-all">Show all 148 patients</a>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
